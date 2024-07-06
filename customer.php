@@ -1,5 +1,22 @@
 <?php
-    include 'mysql_connect.php';
+    include 'header.php';
+    include 'mysql_connect.php'; //connect this file
+
+    if(isset($_POST['submit'])){
+        $nic=$_POST['nic'];
+        $name=$_POST['name'];
+        $address=$_POST['address'];
+        $salary=$_POST['salary'];
+
+        $sql="INSERT INTO `customer` (nic,name,address,salary)
+            VALUES('$nic','$name','$address','$salary')";//normal my sql query as variable
+
+        $result=mysqli_query($con,$sql);//pass the data to mysqli_query function
+
+        if($result){
+            echo "Customer was Saved!";
+        }
+    }
 ?>
 
 <!doctype html>
@@ -13,7 +30,7 @@
     <title>Customer</title>
 </head>
 <body>
-<form>
+<form method="post">
     <div class="container">
         <br>
         <h4>Customer Form</h4>
@@ -45,7 +62,7 @@
             </div>
             <div class="col-12">
                 <br>
-                <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+                <input type="submit" name="submit" class="btn btn-primary col-12" value="Save Customer"/>
             </div>
         </div>
     </div>
