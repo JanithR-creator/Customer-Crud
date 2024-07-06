@@ -50,7 +50,7 @@ include 'mysql_connect.php';
                 <td>'.$address.'</td>
                 <td>'.$salary.'</td>
                 <td>
-                    <a href="#" class="btn btn-success btn-sm">Update</a>
+                    <a href="customer-update.php?customerId='.$nic.'" class="btn btn-success btn-sm">Update</a>
                     <a href="customer-delete.php?customerId='.$nic.'" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
