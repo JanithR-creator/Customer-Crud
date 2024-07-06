@@ -9,42 +9,42 @@
     <title>Customer</title>
 </head>
 <body>
-    <form>
-        <div class="container">
-            <br>
-            <h4>Customer Form</h4>
-            <hr>
-            <div class="row">
-                <div class="col-3">
-                    <div class="form-group">
-                        <label for="nic">NIC</label>
-                        <input type="text" name="nic" id="nic" class="form-control" required>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" required>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" name="address" id="address" class="form-control" required>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="form-group">
-                        <label for="salary">Salary</label>
-                        <input type="number" name="salary" id="salary" class="form-control" required>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <br>
-                    <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+<form>
+    <div class="container">
+        <br>
+        <h4>Customer Form</h4>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">NIC</label>
+                    <input type="text" name="nic" id="nic" class="form-control" required>
                 </div>
             </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="number" name="salary" id="salary" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+            </div>
         </div>
-    </form>
+    </div>
+</form>
 </body>
 </html>
