@@ -28,11 +28,13 @@ include 'mysql_connect.php';
             <th>Name</th>
             <th>Address</th>
             <th>Salary</th>
+            <th>Options</th>
         </tr>
         </thead>
         <tbody>
         <?php
         $sql = "SELECT * FROM customer";
+
         $result = mysqli_query($con, $sql);
         if ($result) {
             while ($raw = mysqli_fetch_assoc($result)) {
@@ -47,6 +49,10 @@ include 'mysql_connect.php';
                 <td>'.$name.'</td>
                 <td>'.$address.'</td>
                 <td>'.$salary.'</td>
+                <td>
+                    <a href="#" class="btn btn-success btn-sm">Update</a>
+                    <a href="customer-delete.php?customerId='.$nic.'" class="btn btn-danger btn-sm">Delete</a>
+                </td>
             </tr>
         ';
 
